@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Task1>
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+	var userId = Context.Session.GetInt32("UserId");
+	ViewData["Title"] = "Tasks";
+}
+<div class="container py-4">
+	<div class="d-flex justify-content-center align-items-center mb-4">
+		<h2 class="fw-bold">@ViewData["Title"]📝</h2>
+		@{
+			var Role = HttpContextAccessor.HttpContext.Session.GetString("Role");
+			if (Role == "Admin")
+			{
+				<a asp-action="Create" class="btn btn-success rounded-2 px-4 shadow">New Task<i class="navbar-toggler-icon">+</i></a>
+			}
+		}
+	</div>
+	@if (!Model.Any())
+	{
+		<div class="alert alert-info text-center">No Tasks Right Now🚫</div>
+	}
+	else
+	{
+		<div class="table-responsive">
+			<table class="table table-hover align-middle shadow-sm">
+				<thead class="table-light">
+					<tr>
+						<th>Title</th>
+						<th>Description</th>
+						<th>Project Name</th>
+						<th>Status</th>
+						<td>Priority</td>
+						<td>Due Date</td>
+						<th>Created At</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						<tr>
+							<td>@item.Title</td>
+							<td>@(item.Description?.Length > 50 ? item.Description.Substring(0, 50) + "..." : item.Description)</td>
+							<td>@item.Project?.Name</td>
+							<td>@item.Status</td>
+							<td>@item.Priority</td>
+							<td>@item.Due_date</td>
+							<td>@(item.Created_at.ToString("yyyy-MM-dd"))</td>
+							<td>@(item.IsCompleted ? "Done ✅" : "Pending ⏳")</td>
+							<td class="text-center">
+								<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary mx-1">Display</a>
+								@{
+									Role = HttpContextAccessor.HttpContext.Session.GetString("Role");
+									if (Role == "Admin")
+									{
+										<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Edit</a>
+									}
+									@if (!item.IsCompleted)
+									{
+										<form asp-action="Completed" asp-controller="Task1" method="post" style="display:inline;">
+											<input type="hidden" name="id" value="@item.Id" />
+											<button type="submit" class="btn btn-sm btn-outline-success">Done✅</button>
+										</form>
+									}
+									else
+									{
+										<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+										
+									}
+								}
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	}
+</div>

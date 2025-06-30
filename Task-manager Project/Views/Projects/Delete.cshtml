@@ -1,0 +1,31 @@
+﻿@model Task_manager_Project.Models.Project
+@{
+	ViewData["Title"] = "Delete project";
+}
+<div class="container mt-5">
+	<div class="card shadow rounded-3 border-danger">
+		<div class="card-header bg-danger text-white">
+			<h4 class="mb-0">Delete Project Confirmation⚠</h4>
+		</div>
+		<div class="card-body">
+			<p class="fs-5">Are you Sure You Want To Delete This Project?</p>
+			<dl class="row">
+				<dt class="col-sm-3">Name : </dt>
+				<dd class="col-sm-9">@Model.Name</dd>
+				<dt class="col-sm-3">Description : </dt>
+				<dd class="col-sm-9">@Model.Description</dd>
+				<dt class="col-sm-3">Created At : </dt>
+				<dd class="col-sm-9">@Model.created_at</dd>
+				<dt class="col-sm-3">Due Date :</dt>
+				<dd class="col-sm-9">@Model.due_date</dd>
+			</dl>
+			<form asp-action="Delete">
+				<input type="hidden" asp-for="Id" />
+				<div class="d-flex justify-content-between mt-4">
+					<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+					<button type="submit" class="btn btn-danger">Delete Task</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

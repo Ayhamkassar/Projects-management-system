@@ -1,0 +1,15 @@
+# Files Should Be ignored
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# loacl settings
+appsettings.json
+
+# Temporary Files
+*.log
+*.tmp
+*.cache
+Sensitive/*.cs

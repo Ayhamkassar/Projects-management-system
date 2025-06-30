@@ -1,0 +1,47 @@
+﻿@model IEnumerable<User>
+@{
+	ViewData["Title"] = "Users";
+}
+<div class="container py-4">
+	<div class="d-flex justify-content-center align-items-center mb-4">
+		<h2 class="fw-bold">@ViewData["Title"]👥</h2>
+		<a asp-action="Create" asp-controller="Login" class="btn btn-success rounded-2 px-4 shadow">New User<i class="navbar-toggler-icon">+</i></a>
+	</div>
+	@if (!Model.Any())
+	{
+		<div class="alert alert-info text-center">No Users Right Now🚫</div>
+	}
+	else
+	{
+		<div class="table-responsive">
+			<table class="table table-hover align-middle shadow-sm">
+				<thead class="table-light">
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Role</th>
+						<th>Created At</th>
+						<th>Last Login</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						<tr>
+							<td>@item.Name</td>
+							<td>@item.Email</td>
+							<td>@item.role</td>
+							<td>@(item.created_at.ToString("yyyy-MM-dd"))</td>
+							<td>@item.last_login.ToString("yyyy-MM-dd,HH-mm-ss")</td>
+							<td class="text-center">
+								<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary mx-1">Display</a>
+								<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Eliminate</a>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	}
+</div>

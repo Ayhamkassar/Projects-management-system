@@ -1,0 +1,31 @@
+﻿@model Task_manager_Project.Models.User
+@{
+	ViewData["Title"] = "Delete user";
+}
+<div class="container mt-5">
+	<div class="card shadow rounded-3 border-danger">
+		<div class="card-header bg-danger text-white">
+			<h4 class="mb-0">Delete User Confirmation⚠</h4>
+		</div>
+		<div class="card-body">
+			<p class="fs-5">Are you Sure You Want To Delete This User?</p>
+			<dl class="row">
+				<dt class="col-sm-3">Name : </dt>
+				<dd class="col-sm-9">@Model.Name</dd>
+				<dt class="col-sm-3">Email : </dt>
+				<dd class="col-sm-9">@Model.Email</dd>
+				<dt class="col-sm-3">Created At : </dt>
+				<dd class="col-sm-9">@Model.created_at</dd>
+				<dt class="col-sm-3">Role :</dt>
+				<dd class="col-sm-9">@Model.role</dd>
+			</dl>
+			<form asp-action="Delete">
+				<input type="hidden" asp-for="Id" />
+				<div class="d-flex justify-content-between mt-4">
+					<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+					<button type="submit" class="btn btn-danger">Delete Task</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

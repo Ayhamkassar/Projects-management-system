@@ -1,0 +1,46 @@
+﻿
+
+@{
+	ViewData["Title"] = "Welcome!";
+	var userName = ViewBag.UserName;
+}
+
+<div class="container mt-5">
+	<div class="text-center">
+		<h1 class="display-4 fw-bold text-primary mb-3">Welcome, @userName👋</h1>
+		<p class="lead text-secondary">We're HAppy tha you are with us in the project management system!</p>
+	</div>
+</div>
+
+<div class="row mt-5 g-4">
+	<div class="col-md-4">
+		<div class="card shadow-sm rounded-4 h-100 text-center border-0">
+			<div class="card-body">
+				<i class="bi bi-kandan fs-1 text-info mb-3"></i>
+				<h5 class="card-title">My Projects</h5>
+				<p class="card-text text-muted">Create Your Own Projects and Manage It easly and effectivly!</p>
+				<a asp-controller="Projects" asp-action="Index" class="btn btn-outline-info btn-sm">Show The Projects</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card shadow-sm rounded-4 h-100 text-center border-0">
+			<div class="card-body">
+				<i class="bi bi-check2-square fs-1 text-success mb-3"></i>
+				<h5 class="card-title">My Tasks</h5>
+				<p class="card-text text-muted">follow your own tasks and achive it!</p>
+				<a asp-controller="Task1" asp-action="Index" class="btn btn-outline-success btn-sm">Show Tasks</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card shadow-sm rounded-4 h-100 text-center border-0">
+			<div class="card-body">
+				<i class="bi bi-person-circle fs-1 text-warning mb-3"></i>
+				<h5>My Profile</h5>
+				<p class="card-text text-muted">display and update your informations!</p>
+				<a asp-controller="Users" asp-action="Profile" class="btn btn-outline-warning btn-sm">Profile</a>
+			</div>
+		</div>
+	</div>
+</div>

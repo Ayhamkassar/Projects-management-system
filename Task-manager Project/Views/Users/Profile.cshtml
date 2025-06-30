@@ -1,0 +1,24 @@
+﻿@model User
+
+@{
+	ViewData["Title"] = "Profile";
+}
+
+<div class="container mt-5">
+	<div class="card shdow-lg p-4 rounded-4">
+		<div class="row align-items-center">
+			<div class="col-md-3 text-center">
+				<img src="https://avatars.githubusercontent.com/u/1?v=4" class="rounded-circle img-fluid shadow-sm" style="max-width:150px;" alt="Profile Photo" />
+			</div>
+			<div class="col-md-9">
+				<h2 class="fw-bold">@Model.Name</h2>
+				<p class="text-muted mb-1"><i class="bi bi-envelope"></i>@Model.Email</p>
+				<p class="text-muted"><i class="bi bi-person-badge"></i>Role : @Model.role</p>
+				<p class="text-muted"><i class="bi bi-calendar-check"></i>Join Date : @Model.created_at.ToString("yyyy-MM-dd")</p>
+				<p class="text-muted"><i class="bi bi-calendar-check"></i>Last Login : @Model.last_login.ToString("yyyy-MM-dd")</p>
+				<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary mt-3 me-2"><i class="bi bi-pencil-square"></i>Edit Informations</a>
+				<a asp-action="Logout" asp-controller="Login" class="btn btn-outline-danger mt-3"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+			</div>
+		</div>
+	</div>
+</div>

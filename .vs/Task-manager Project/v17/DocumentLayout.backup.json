@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\controllers\\task1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\controllers\\task1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\views\\task1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\views\\task1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\views\\task1\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\views\\task1\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\views\\projects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\views\\projects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|c:\\users\\asus\\source\\repos\\task-manager project\\task-manager project\\views\\projects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2AC0A9EE-BE7D-4D30-B6E5-BADE85D0241F}|Task-manager Project\\Task-manager Project.csproj|solutionrelative:task-manager project\\views\\projects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Task-manager Project\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Task-manager Project\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAtwE8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:29:44.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Task1\\Details.cshtml",
+              "RelativeDocumentMoniker": "Task-manager Project\\Views\\Task1\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Task1\\Details.cshtml",
+              "RelativeToolTip": "Task-manager Project\\Views\\Task1\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T20:24:11.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Task1\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task-manager Project\\Views\\Task1\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Task1\\Index.cshtml",
+              "RelativeToolTip": "Task-manager Project\\Views\\Task1\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwEMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T20:08:52.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\Task1Controller.cs",
+              "RelativeDocumentMoniker": "Task-manager Project\\Controllers\\Task1Controller.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\Task1Controller.cs",
+              "RelativeToolTip": "Task-manager Project\\Controllers\\Task1Controller.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAIwMMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:46:00.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Projects\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Task-manager Project\\Views\\Projects\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Projects\\Edit.cshtml",
+              "RelativeToolTip": "Task-manager Project\\Views\\Projects\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T19:42:23.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Projects\\Create.cshtml",
+              "RelativeDocumentMoniker": "Task-manager Project\\Views\\Projects\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Views\\Projects\\Create.cshtml",
+              "RelativeToolTip": "Task-manager Project\\Views\\Projects\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T19:41:58.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Task-manager Project\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Task-manager Project\\Task-manager Project\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Task-manager Project\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAqwFoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:35:20.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

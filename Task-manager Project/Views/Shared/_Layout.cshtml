@@ -1,0 +1,85 @@
+﻿@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Task_manager_Project</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Task_manager_Project.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-action="Index" asp-controller="Projects">Task Management system</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @{
+                var isLoggedIn = HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true";
+                var Role = HttpContextAccessor.HttpContext.Session.GetString("Role");
+                var UserName = HttpContextAccessor.HttpContext.Session.GetString("Name");
+                if (isLoggedIn)
+                {
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Projects" asp-action="Index">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Task1" asp-action="Index">Tasks</a>
+                            </li>
+                            @if (Role == "Admin")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Users" asp-action="Index">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Users" asp-action="Profile">Profile</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Users" asp-action="Profile">Profile</a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <span class="text-white nav-link">Welcome, @UserName</span>
+                    <a asp-controller="Login" asp-action="Logout">Logout</a>
+                }
+                else
+                {
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-lg-end justify-content-start" id="mainNav">
+                            <div class="d-flex gap-2">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Create">Regstier</a>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            }
+            </div>
+        </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        <footer class="text-center text-muted mt-5 mb-3">
+                &copy; @DateTime.Now.Year - Task Manager System
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

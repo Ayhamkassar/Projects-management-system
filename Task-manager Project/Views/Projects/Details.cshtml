@@ -1,0 +1,31 @@
+﻿@model Project
+
+@{
+	ViewData["Title"] = "Project Details";
+}
+
+<div class="container py-5">
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="card shadow-lg rounded-4">
+				<div class="card-body">
+					<h3 class="card-title text-center mb-4">Project Details📁</h3>
+					<dl class="row">
+						<dt class="col-sm-4">Project Name</dt>
+						<dd class="col-sm-8">@Model.Name</dd>
+						<dt class="col-sm-4">Description</dt>
+						<dd class="col-sm-8">@Model.Description</dd>
+						<dt class="col-sm-4">Created At</dt>
+						<dd class="col-sm-8">@Model.created_at</dd>
+						<dt class="col-sm-4">Owner</dt>
+						<dd class="col-sm-8">@Model.Owner?.Name</dd>
+					</dl>
+					<div class="mt-4 d-flex justify-content-between">
+						<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary px-4">Edit</a>
+						<a asp-action="Index" class="btn btn-outlin-secondary px-4">Back</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

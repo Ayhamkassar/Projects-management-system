@@ -1,0 +1,38 @@
+﻿@model Task1
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<div class="container py-5">
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="card shadow-lg rounded-4">
+				<div class="card-body">
+					<h3 class="card-title text-center mb-4">Task Details📁</h3>
+					<dl class="row">
+						<dt class="col-sm-4">Task Title</dt>
+						<dd class="col-sm-8">@Model.Title</dd>
+						<dt class="col-sm-4">Description</dt>
+						<dd class="col-sm-8">@Model.Description</dd>
+						<dt class="col-sm-4">Project</dt>
+						<dd class="col-sm-8">@Model.Project.Name</dd>
+						<dt class="col-sm-4">Status</dt>
+						<dd class="col-sm-8">@Model.Status</dd>
+						<dt class="col-sm-4">Priority</dt>
+						<dd class="col-sm-8">@Model.Priority</dd>
+						<dt class="col-sm-4">Due Date</dt>
+						<dd class="col-sm-8">@Model.Due_date</dd>
+						<dt class="col-sm-4">Created At</dt>
+						<dd class="col-sm-8">@Model.Created_at</dd>
+						<dt class="col-sm-4">User</dt>
+						<dd class="col-sm-8">@Model.AssignedTo?.Name</dd>
+					</dl>
+					<div class="mt-4 d-flex justify-content-between">
+						<a asp-action="Index" class="btn btn-outlin-secondary px-4">Back</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

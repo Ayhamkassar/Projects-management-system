@@ -1,0 +1,33 @@
+﻿@model Project
+
+@{
+	ViewData["Title"] = "Add Project";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+	<div class="card shadow-lg p-4 rounded-4" style="width:100%;">
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<form asp-action="Create">
+	<div class="mb-3">
+		<label asp-for="Name" class="form-label fw-bold">Project Name</label>
+		<input asp-for="Name" class="form-control" placeholder="Enter Project Name"/>
+		<span asp-validation-for="Name" class="text-danger small"></span>
+	</div>
+	<div class="mb-3">
+		<label asp-for="Description" class="form-label fw-bold">Description</label>
+		<textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter Description"></textarea>
+		<span  asp-validation-for="Description" class="text-danger small"></span>
+	</div>
+	<div class="mb-3">
+		<label asp-for="owner_id" class="form-label fw-bold">Project Owner</label>
+		<select asp-for="owner_id" class="form-select" asp-items="@(new SelectList(ViewBag.Users, "Id", "Name"))">
+			<option value="">--Enter Owner--</option>
+		</select>
+		<span asp-validation-for="owner_id" class="text-danger small"></span>
+	</div>
+	<button type="submit" class="btn bttn-success">Save</button>
+	<a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+</div>
+</div>
